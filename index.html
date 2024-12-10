@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shut The Box</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./game.js" defer></script>
+    </head>
+    <body>
+        <div id="home">
+            <h1>Shut The Box</h1>
+            <input id="player-1">
+            <input id="player-2">
+            <button id="start-btn">Start The Game</button>
+        </div>
+        <div id="game">
+                <h1>Round <span id="round-num">1</span></h1>
+                <h1><span id="player-turn">Player</span>'s turn</h1>
+                <div class="board">
+                    <h1 class="number" id="box1" data-lid="open">1</h1>
+                    <h1 class="number" id="box2" data-lid="open">2</h1>
+                    <h1 class="number" id="box3" data-lid="open">3</h1>
+                    <h1 class="number" id="box4" data-lid="open">4</h1>
+                    <h1 class="number" id="box5" data-lid="open">5</h1>
+                    <h1 class="number" id="box6" data-lid="open">6</h1>
+                    <h1 class="number" id="box7" data-lid="open">7</h1>
+                    <h1 class="number" id="box8" data-lid="open">8</h1>
+                    <h1 class="number" id="box9" data-lid="open">9</h1>
+                </div>
+            </div>
+            <div  id="dice-game">
+                <div class="dice-container">
+                    <div class="dice"><i id="dice-1" class="bi bi-dice-1"></i></div>
+                    <div class="dice"><i id="dice-2" class="bi bi-dice-4"></i></div>
+                </div>
+                <div>Sum: <span id="sum-display">5</span></div>
+                <div class="button-container">
+                    <button id="roll-btn">ROLL</button>
+                    <button id="indiv-die-btn">INDIVIDUAL DICE</button>
+                    <button id="sum-btn">SUM OF THE DICE</button>
+                    <button id="end-btn">END YOUR TURN</button>
+                </div>
+            </div>
+            <div id="scorecard">
+               <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th id="p1name">Player1</th>
+                        <th id="p2name">Player2</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+               </table>
+            </div>
+        <div id="winner">
+            <h1>Winner: <span id="game-winner"></span></h1>
+            <h2><span id="game-runner-up"></span></h2>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </body>
+</html>
